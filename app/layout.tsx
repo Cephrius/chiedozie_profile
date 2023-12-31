@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
-import Navbar from '@/components/ui/NavLink'
-import Navigation from '@/components/navigation'
+import  Navbar  from '@/components/ui/Navbar';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,8 +25,9 @@ export default function RootLayout({
           defaultTheme='light'
           enableSystem
         >
-          
           <Navbar />
+          <div className='px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto'>
+          </div>
           {children}  
         </ThemeProvider>
       </body>
