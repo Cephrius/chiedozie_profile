@@ -49,6 +49,8 @@ export default function MainNav() {
   ];
 
   return (
+    <nav >
+
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
@@ -110,5 +112,6 @@ export default function MainNav() {
         ))}
       </NavbarMenu>
     </Navbar>
+    </nav>
   );
 }
