@@ -24,6 +24,7 @@ import clsx from "clsx";
 
 
 
+
 export default function MainNav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [mounted, setMounted] = useState(false);
@@ -55,7 +56,15 @@ export default function MainNav() {
           className="sm:hidden"
         />
         <NavbarBrand>
+          
           <Link href="/">
+          <Image
+            src={resolvedTheme === "light" ? '/logo.jpg' : '/whitelogo.png'}
+            width={30}
+            height={30}
+            alt="logo"
+          />
+
             <p className="font-bold text-inherit">Chiedozie</p>
           </Link>
         </NavbarBrand>
