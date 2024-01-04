@@ -23,14 +23,14 @@ export default function ThemeSwitcher() {
       <Listbox value={theme} onChange={(value) => setTheme(value)}>
         {({ open }) => {
           const iconClassName = clsx(
-            "w-5 h-5 text-primary cursor-pointer transition-colors", resolvedTheme === "dark" && "dark:text-white"
+            "w-4 h-4 text-primary cursor-pointer transition-colors", resolvedTheme === "dark" && "dark:text-white"
           );
 
           return (
             <div className="relative">
               <Listbox.Button
                 className={clsx(
-                  "relative w-8 h-8 cursor-default rounded-full flex items-center justify-center focus:outline-none"
+                  "sm:w-4 sm:h-4 relative w-8 h-8 cursor-pointer rounded-full flex items-center justify-center focus:outline-none"
                 )}
               >
                 {resolvedTheme === "dark" ? (
@@ -48,9 +48,11 @@ export default function ThemeSwitcher() {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ type: "spring", bounce: 0.3, duration: 0.3 }}
+                    style={theme === "chalk" ? { background: "#af987c"} :{}}
                     className={clsx(
-                      "absolute right-0 p-2 mt-2 overflow-auto text-base origin-top-right shadow-lg max-h-60 w-42 rounded-xl focus:outline-none sm:text-sm capitalize",
-                      resolvedTheme === "dark" && {background: "#3e3e3e"}
+                      "absolute right-0 mt-2 overflow-auto text-base origin-top-right shadow-lg max-h-60 w-42 rounded-xl focus:outline-none sm:text-sm capitalize",
+                      resolvedTheme === "dark" && {background: "#3e3e3e"},
+                    
                     )}
                   >
                     {themes.map((theme) => (
@@ -58,8 +60,8 @@ export default function ThemeSwitcher() {
                         key={theme}
                         className={({ active }) =>
                           clsx(
-                            "relative cursor-pointer select-none py-2 pl-10 pr-4 rounded-md",
-                            active ? "bg-gray-100 dark:bg-gray-700" : "bg-transparent"
+                            "relative cursor-pointer select-none py-2 pl-10 pr-4 rounded-md ",
+                            active ? "bg-gray-100 dark:bg-slate-800 " : ""
                           )
                         }
                         value={theme}

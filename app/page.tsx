@@ -34,8 +34,8 @@ export default function Home() {
           alt="logo"
           className='justify-center rounded-full shadow-lg fade-up3'
         />
-        <div className='flex items-center space-x-4 text-2xl  '>
-          <div className='duration-300 hover:scale-125 fade-right1'>
+        <div className='flex items-center space-x-3 text-xl lg:space-x-4  '>
+          <div className='duration-300 hover:scale-125 fade-right1 '>
             <Link
               href={"mailto:chiedozie.ehileme@gmail.com"}
             >
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <p className='lg:text-sm text-sm font-medium pt-10 lg:mr-16 fade-up4 '>
+        <p className='lg:text-sm text-sm font-medium pt-10 lg:mr-16 fade-up4 mr-16'>
           Hi, I&apos;m Chiedozie Ehileme, a future software engineer studying Computer Science at Houston Christian University. I love to work on side projects of my own to improve my skills for later down the road.
         </p>
       </div>

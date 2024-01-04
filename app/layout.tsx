@@ -21,7 +21,6 @@ export default function RootLayout({
         <NextUIProvider>
           <ThemeProvider
             attribute='class'
-            defaultTheme='light'
             enableSystem
           >
           <div>
