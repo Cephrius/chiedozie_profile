@@ -68,7 +68,9 @@
 
   /* Create new theme for  */
 
-
+  .animate-in-og {
+    animation-delay: calc(var(--index) * 10s);
+  }
 
 }
 
@@ -82,106 +84,3 @@
   }
 }
 
-@media (hover: hover) {
-  .animated-list:hover li {
-    opacity: 0.5;
-  }
-
-  .animated-list:hover li:hover {
-    opacity: 1;
-  }
-}
-
-.animate-in {
-  animation-delay: calc(var(--index) * 130ms);
-}
-/* keyframes */
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(40px) scale(1);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-
-@keyframes fade-up-text {
-  0% {
-    opacity: 0;
-    transform: translateY(50px) scale(1);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-@keyframes fade-down {
-  0% {
-    opacity: 0;
-    transform: translateY(30px) scale(1);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-
-@keyframes fade-from-right {
-  0% {
-    opacity: 0;
-    transform: translateY(60px) scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-
-.fade-right1 {
-  animation: fade-from-right 1.5s;
-  animation-delay: 100ms;
-}
-.fade-right2 {
-  animation: fade-from-right 1.7s;
-  animation-delay: 100ms;
-}
-.fade-right3 {
-  animation: fade-from-right 1.9s;
-  animation-delay: 100ms;
-}
-.fade-right4 {
-  animation: fade-from-right 2.1s;
-  animation-delay: 100ms;
-}
-.fade-right5 {
-  animation: fade-from-right 2.4s;
-  animation-delay: 100ms;
-}
-
-.fade-up {
-  animation: fade-up 1s  ;
-  animation-delay: 100ms;
-}
-
-.fade-up2 {
-  animation: fade-up 1s ease-in-out;
-}
-
-.fade-up3 {
-  animation: fade-up 1.3s ease-in-out;
-  
-}
-
-.fade-up4 {
-  animation: fade-up-text 1.8s ease-in-out;
-}
-
-.fade-up5 {
-  animation: fade-up 1.5s ease-in-out;
-}

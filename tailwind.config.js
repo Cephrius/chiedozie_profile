@@ -59,7 +59,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        in: {
+        "in": {
           "0%": { transform: "translateY(18px)", opacity: 0 },
           "100%": { transform: "translateY(0)", opacity: 1 },
         },
@@ -69,7 +69,7 @@ module.exports = {
         },
       },
       animation: {
-        in: "in 0.7s both",
+        "in-og": "in 0.65s both",
         "in-reverse": "in-reverse 0.9s both",
       },
     },
