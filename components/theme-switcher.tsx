@@ -20,7 +20,7 @@ export default function ThemeSwitcher() {
 
   return (
     <>
-      <Listbox value={theme} onChange={(value) => setTheme(value)}>
+      <Listbox value={ theme } onChange={(value) => setTheme(value)}>
         {({ open }) => {
           const iconClassName = clsx(
             "w-4 h-4 text-primary cursor-pointer transition-colors", resolvedTheme === "dark" && "dark:text-white"
@@ -51,7 +51,7 @@ export default function ThemeSwitcher() {
                     style={theme === "chalk" ? { background: "#af987c"} :{}}
                     className={clsx(
                       "absolute right-0 mt-2 overflow-auto text-base origin-top-right shadow-lg max-h-60 w-42 rounded-xl focus:outline-none sm:text-sm capitalize",
-                      resolvedTheme === "dark" && {background: "#3e3e3e"},
+                      
                     
                     )}
                   >
@@ -69,16 +69,16 @@ export default function ThemeSwitcher() {
                         {({ selected }) => (
                           <>
                             <span
-                              className={`block truncate ${
-                                selected ? "font-medium" : "font-normal"
+                              className={`block truncate text-xs font-light  ${
+                                selected ? "font-medium " : "font-normal "
                               }`}
                             >
                               {theme === "system" ? "Automatic" : theme}
                             </span>
                             {selected ? (
-                              <span className="absolute inset-y-0 left-0 flex items-center pl-3 dark:text-neutral-50">
+                              <span className=" absolute inset-y-0 left-0 flex items-center pl-3 dark:text-neutral-50">
                                 <Check
-                                  className="w-5 h-5"
+                                  className="w-4 h-4 "
                                   aria-hidden="true"
                                 />
                               </span>
