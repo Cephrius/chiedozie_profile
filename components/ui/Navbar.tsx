@@ -26,7 +26,7 @@ export default function Navigation() {
   return (
     <header className={clsx("relative md:sticky top-0 z-20 ")}>
       <nav className="px-4 md:px-6 py-3 lg max-w-[700px] mx-auto flex justify-between items-center gap-3 ">
-        <Link href="/" className="shrink-0 text-primary flex text-black dark:text-white">
+        <Link href="/" className="shrink-0 text-primary flex  dark:text-white">
           <Image 
             src={resolvedTheme === 'dark' ? '/whitelogo.png': "/logo.jpg"} 
             alt="image"
@@ -35,7 +35,7 @@ export default function Navigation() {
           />
         
         </Link>
-        <ul className="hidden md:flex items-center gap-1">
+        <ul className="hidden md:flex items-center gap-1 text-primary">
           {links.map((link) => (
             <li key={link.href}>
               <NavLink href={link.href}>{link.label}</NavLink>
