@@ -12,7 +12,6 @@ import {
 import { AiFillInstagram } from "react-icons/ai";
 import  { Link }  from '@nextui-org/react';
 import { useEffect } from 'react';
-
 import { ArrowUpRightIcon } from '@heroicons/react/16/solid';
 import Head from 'next/head';
 
