@@ -63,7 +63,7 @@ export default function Home() {
         
       </div>
       <div>
-        <p className='lg:text-sm text-sm font-light pt-10 lg:mr-40 animate-in-og delay-300 mr-16' >
+        <p className='lg:text-sm text-sm font-normal pt-10 lg:mr-40 animate-in-og delay-300 mr-16' >
           Hi, I&apos;m Chiedozie Ehileme, a future software engineer studying Computer Science at Houston Christian University. I love to work on side projects of my own to improve my skills for later down the road.
         </p>
         <ul className='flex space-x-10 lg:pt-10 pt-8 text-sm animate-in-og delay-500'>
