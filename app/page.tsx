@@ -22,7 +22,7 @@ export default function Home() {
   return (
   <div>
     <main className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto " >
-      <div className='lg:text-2xl text-xl pb-8 font-bold animate-in-og' >
+      <div className='lg:text-3xl text-xl pb-8 font-bold animate-in-og' >
           <h1>Chiedozie Ehileme</h1>
       <div className='lg:text-sm text-sm font-light from-neutral-700 animate-in-og delay-100 ' >
           <p>Computer Science Major</p>
@@ -38,9 +38,9 @@ export default function Home() {
         />
 
         {/* SOCIAL LINKS */}
-          <ul className='flex space-x-5 items-center animate-in-og delay-150 '>
+          <ul className='flex space-x-5 items-center animate-in-og delay-150'>
             
-            <li className='text-sm lg:text-sm hover:scale-125 duration-300'>
+            <li className='text-sm lg:text-sm hover:scale-125 duration-300' >
                 <Link href={"https://www.linkedin.com/in/chiedozie-ehileme-529b6a25b/"}>
                 <BsLinkedin />
               </Link>
