@@ -43,7 +43,7 @@ export default function Navigation() {
           ))}
         </ul>
         <Popover className="relative ml-auto md:hidden">
-          <Popover.Button className="flex items-center gap-1 p-1 rounded-lg focus-visible:outline-none focus:ring-0">
+          <Popover.Button className=" text-primary flex items-center gap-1 p-1 rounded-lg focus-visible:outline-none focus:ring-0">
             Menu
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ export default function Navigation() {
             leaveTo="opacity-0 translate-y-1"
           >
             <Popover.Panel
-              className="absolute z-10 right-0 p-2 mt-2 overflow-auto text-base origin-top-right shadow-lg w-40 bg-white dark:bg-black rounded-xl focus:outline-none sm:text-sm"
+              className="text-primary absolute z-10 right-0 p-2 mt-2 overflow-auto text-base origin-top-right shadow-lg w-40 bg-white dark:bg-black rounded-xl focus:outline-none sm:text-sm"
              
             >
               <div className="grid">
@@ -74,7 +74,7 @@ export default function Navigation() {
                     key={link.href}
                     href={link.href}
                     className={clsx(
-                      "px-4 py-2 rounded-md hover:font-bold transition-colors",
+                      "px-4 py-2 rounded-md hover:font-bold transition-colors text-primary",
                       pathname === link.href
                         ? "bg-tertiary font-medium"
                         : "font-normal"

@@ -48,19 +48,16 @@ export default function ThemeSwitcher() {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ type: "spring", bounce: 0.3, duration: 0.3 }}
-                    style={theme === "pink" ? { background: "#af987c"} :{}}
-                    className={clsx(
-                      "absolute right-0 mt-2 overflow-auto text-base origin-top-right shadow-lg max-h-60 w-42 rounded-xl focus:outline-none sm:text-sm capitalize",
-                      
-                    
-                    )}
+                    className="absolute right-0 p-2 mt-2 overflow-auto text-base origin-top-right shadow-lg max-h-60 w-42 rounded-xl bg-white dark:bg-black focus:outline-none sm:text-sm capitalize"
+                    style={theme === "pink" ? { background: "#dedddf"} :{}
+                  }
                   >
                     {themes.map((theme) => (
                       <Listbox.Option
                         key={theme}
                         className={({ active }) =>
                           clsx(
-                            "relative cursor-pointer select-none py-2 pl-10 pr-4 rounded-md ",
+                            "relative cursor-pointer text-primary select-none py-2 pl-10 pr-4 rounded-md ",
                             active ? "bg-gray-100 dark:bg-slate-800 " : ""
                           )
                         }

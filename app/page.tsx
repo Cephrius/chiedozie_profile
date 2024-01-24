@@ -15,15 +15,20 @@ import { useEffect } from 'react';
 import { ArrowUpRightIcon } from '@heroicons/react/16/solid';
 import Head from 'next/head';
 
+export const metadata: Metadata = {
+  title: "Home | Chiedozie Ehileme",
+  description: "Chiedozie Ehileme is a Computer Science Major at Houston Christian University."
+}
+
 
 export default function Home() {
 
   return (
   <div>
     <main className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto " >
-      <div className='lg:text-3xl text-xl pb-8 font-bold animate-in-og' >
+      <div className='lg:text-3xl text-primary text-xl pb-8 font-bold animate-in-og' >
           <h1>Chiedozie Ehileme</h1>
-      <div className='lg:text-sm text-sm font-light from-neutral-700 animate-in-og delay-100 ' >
+      <div className='lg:text-sm text-sm font-light text-secondary animate-in-og delay-100 ' >
           <p>Computer Science Major</p>
       </div>
       </div>
@@ -68,15 +73,15 @@ export default function Home() {
         </p>
         <ul className='flex space-x-10 lg:pt-10 pt-8 text-sm animate-in-og delay-500'>
           <li className='flex items-center'>
-            <Link className='space-x-2 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer' href='https://drive.google.com/file/d/1cIuU900DZjXOxCQ8TYq8u_ENAN9hv36M/view?usp=drive_link'>
+            <Link className='space-x-2 hover:text-secondary cursor-pointer' href='https://drive.google.com/file/d/1cIuU900DZjXOxCQ8TYq8u_ENAN9hv36M/view?usp=drive_link'>
               <ArrowUpRightIcon className=' h-5 w-5'/>
-              <span>Resume</span>
+              <span className='text-secondary'>Resume</span>
             </Link>
           </li>
           <li className='flex items-center'>
-            <Link className='space-x-2 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer ' href="mailto:chiedozie.ehileme@gmail.com">
+            <Link className='space-x-2 hover:text-secondary cursor-pointer ' href="mailto:chiedozie.ehileme@gmail.com">
               <ArrowUpRightIcon className='h-5 w-5'/>
-              <span>Email Me</span>
+              <span className='text-secondary'>Email Me</span>
             </Link>
           </li>
         </ul>

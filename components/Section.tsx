@@ -22,7 +22,7 @@ export default function Section({
 
     return (
         <section className="flex flex-col md:flex-row gap-2 md:gap-9 col-reverse">
-            <h2 className={clsx("md:w-32 text-primary shrink-0 animate-in-og",
+            <h2 className={clsx("md:w-32 text-secondary shrink-0 animate-in-og",
             headingAlignment=== "right" &&" md:text-right",
             theme === "terminal" ? "font-mono tracking-tight" : "")}
             >
