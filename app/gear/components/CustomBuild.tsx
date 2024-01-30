@@ -5,11 +5,11 @@ import { StaticImageData } from "next/image";
 interface GearProps {
   item: string;
   description: string;
-  imageUrl: string;
+  image: string;
   link: string;
 }
 
-const App: React.FC<GearProps> = ({ item, description, imageUrl, link }: GearProps) => {
+const App: React.FC<GearProps> = ({ item, description, image, link }: GearProps) => {
   return (
     <Card className="grid bg-popover rounded-xl flex-1 mb-4 ">
       {/* Add mb-4 class for margin-bottom between cards */}
@@ -18,7 +18,7 @@ const App: React.FC<GearProps> = ({ item, description, imageUrl, link }: GearPro
           alt="nextui logo"
           height={40}
           radius="sm"
-          src={imageUrl} // Use the correct property from the gear object
+          src={image} // Use the correct property from the gear object
           width={40}
           className="rounded-xl"
         />
