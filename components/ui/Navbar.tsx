@@ -15,7 +15,7 @@ import { Image } from "@nextui-org/react";
 
 const links = [
   { label: "About", href: "/about" },
-  { label: "Gear", href: "/gear" },
+  { label: "Gear", href: "/gear" }, 
   { label: "Projects", href: "/projects" },
 ];
 
@@ -24,7 +24,7 @@ export default function Navigation() {
   const { theme, setTheme, resolvedTheme, themes } = useTheme()
 
   return (
-    <header className={clsx("relative md:sticky top-0 z-20 ")}>
+    <header className={clsx("relative md:sticky bg-background top-0 z-20 ")}>
       <nav className="px-4 md:px-6 py-3 lg max-w-[700px] mx-auto flex justify-between items-center gap-3 ">
         <Link href="/" className="shrink-0 text-primary flex  dark:text-white">
           <Image 
