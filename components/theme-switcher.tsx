@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 
 import { Sun, Moon, Check } from "lucide-react";
+import { BsFillMoonFill } from "react-icons/bs";
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -34,7 +35,7 @@ export default function ThemeSwitcher() {
                 )}
               >
                 {resolvedTheme === "dark" ? (
-                  <Moon className={iconClassName} />
+                  <BsFillMoonFill className={iconClassName} />
                 ) : (
                   <Sun className={iconClassName} />
                 )}
