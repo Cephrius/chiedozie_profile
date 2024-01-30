@@ -6,6 +6,8 @@ import './globals.css'
 import { ThemeProvider } from '@/providers/theme-provider'
 import  Navbar  from '@/components/ui/Navbar';
 import { NextUIProvider } from '@nextui-org/react';
+import clsx from 'clsx'
+
 
 
 
@@ -19,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
         <link rel="icon" href="/logo.jpg" />
-          <body className={`bg-background ${inter.className}`}>
+          <body 
+            className={clsx(inter.className,"antialiased bg-background text-primary width-full")}
+          >
           
           <NextUIProvider>
             <ThemeProvider
@@ -27,14 +31,14 @@ export default function RootLayout({
               defaultTheme='system'
               enableSystem
               >
+            
+          <Navbar />
             <div>
-              <Navbar />
-              {children}  
+              {children}
             </div>
             </ThemeProvider>
           </NextUIProvider>
-          
-          </body>
+        </body>
     </html>
   )
 }

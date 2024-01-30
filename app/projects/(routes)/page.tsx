@@ -78,7 +78,7 @@ export default function Projects() {
           </div>
       </div>
       <div className='animate-in-og delay-150'>
-        <ul className="space-y-14 animated-list"> 
+        <ul className="space-y-8 lg:space-y-14 animated-list"> 
           {listProject.map((project) => (
             <Project 
               key={project.title}

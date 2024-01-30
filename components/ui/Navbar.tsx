@@ -24,8 +24,8 @@ export default function Navigation() {
   const { theme, setTheme, resolvedTheme, themes } = useTheme()
 
   return (
-    <header className={clsx("relative md:sticky bg-background top-0 z-20 ")}>
-      <nav className="px-4 md:px-6 py-3 lg max-w-[700px] mx-auto flex justify-between items-center gap-3 ">
+    <header className={clsx("relative md:sticky top-0 z-20 ")}>
+      <nav className="px-4 md:px-6 py-3 lg max-w-[700px] mx-auto flex justify-between items-center gap-3 bg-background ">
         <Link href="/" className="shrink-0 text-primary flex  dark:text-white">
           <Image 
             src={resolvedTheme === 'dark' ? '/whitelogo.png': "/logo.jpg"} 
@@ -66,7 +66,7 @@ export default function Navigation() {
           >
             <Popover.Panel
               className="text-primary absolute z-10 right-0 p-2 mt-2 overflow-auto text-base origin-top-right shadow-lg w-40 bg-white dark:bg-black rounded-xl focus:outline-none sm:text-sm"
-             
+              style={theme === "pink" ? { background: "#DEDDDF" } : {}}
             >
               <div className="grid">
                 {links.map((link) => (
