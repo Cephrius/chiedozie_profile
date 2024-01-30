@@ -1,4 +1,4 @@
-## MY Personal Website
+## My Personal Website
 My portfolio website is designed to be simplistic and clean while including features like a dark mode toggle, gear list, an about page, and more.
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
