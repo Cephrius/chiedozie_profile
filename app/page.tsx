@@ -11,7 +11,6 @@ import {
 } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 import  { Link }  from '@nextui-org/react';
-import { useEffect } from 'react';
 import { ArrowUpRightIcon } from '@heroicons/react/16/solid';
 import Head from 'next/head';
 
@@ -71,16 +70,16 @@ export default function Home() {
         <p className='lg:text-sm text-sm font-normal pt-10 lg:mr-40 animate-in-og delay-300 mr-8' >
           Hi, I&apos;m Chiedozie Ehileme, a future software engineer studying Computer Science at Houston Christian University. I love to work on side projects of my own to improve my skills for later down the road.
         </p>
-        <ul className='flex space-x-10 lg:pt-10 pt-8 text-sm animate-in-og delay-500'>
-          <li className='flex items-center'>
-            <Link className='space-x-2 hover:text-secondary cursor-pointer' href='https://drive.google.com/file/d/1cIuU900DZjXOxCQ8TYq8u_ENAN9hv36M/view?usp=drive_link'>
+        <ul className=' text-sm pt-6 lg:pt-10 space-y-2 lg:space-y-0 lg:space-x-3 md:space-x-3 md:space-y-0 animate-in-og delay-500 lg:items-center lg:flex md:flex'>
+          <li>
+            <Link className='hover:text-secondary cursor-pointer' href='https://drive.google.com/file/d/1cIuU900DZjXOxCQ8TYq8u_ENAN9hv36M/view?usp=drive_link'>
               <ArrowUpRightIcon className=' h-5 w-5'/>
               <span className='text-secondary'>Resume</span>
             </Link>
           </li>
-          <li className='flex items-center'>
-            <Link className='space-x-2 hover:text-secondary cursor-pointer ' href="mailto:chiedozie.ehileme@gmail.com">
-              <ArrowUpRightIcon className='h-5 w-5'/>
+          <li>
+            <Link className='hover:text-secondary cursor-pointer' href='mailto:chiedozie.ehileme@gmail.com'>
+              <ArrowUpRightIcon className=' h-5 w-5'/>
               <span className='text-secondary'>Email Me</span>
             </Link>
           </li>
