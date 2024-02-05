@@ -44,7 +44,7 @@ const Project = ({ title, description, image, link }: ProjectProps) =>
         href={link}
         target="_blank"
       >
-        Get
+        View
       </a>
     </div>
   </div>
