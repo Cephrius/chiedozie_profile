@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import Image, { StaticImageData } from 'next/image'
-import { Custombuild }  from '../components/CustomBuild'
 import Section from '@/components/Section'
 
 
