@@ -60,6 +60,12 @@ const listProject = [
         link: "https://github.com/Cephrius/Husky_Threads"
       },
       {
+        title:"Cephrius Markdown",
+        description: "Cephrius Markdown is a markdown editor for all your markdown files. A minimal Note taking app with out-of-the-box markdown support.",
+        image: "/CephriusMarkdownPreview.png",
+        link: "https://github.com/Cephrius/Cephrius-Markdown"
+      },
+      {
         title: "Weather App",
         description: "Welcome to WeatherApp, a simple web application that provides weather forecasts for different locations. With WeatherApp, you can quickly retrieve weather information, including temperature, weather conditions, and more, for the current day and the next few days.",
         image: "https://github.com/Cephrius/minimalWeatherApp/raw/main/screenshot.png",
