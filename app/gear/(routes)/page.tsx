@@ -192,6 +192,14 @@ export default function Gear() {
     },
 
     {
+      item: "Apple Macbook Pro 16",
+      category: "Laptop",
+      description:"Apple M1 Pro ",
+      image:'https://static.bhphoto.com/images/images1000x1000/1634584510_1668189.jpg',
+      link:"https://www.amazon.com/Apple-MacBook-16-inch-512GB-Renewed/dp/B09P43P66P/ref=sr_1_3?crid=3DLM8RW8BYLEE&dib=eyJ2IjoiMSJ9.YXlS33FaC_i_a7k_jyn1ZhbPFrbfyub1i5zng6O7m2HoO3nLiDHahiOLpWgDpmEl3D2ManhlI_WO43MOypfrRHl_vfw3fXM3hw3-At-iec4w8ynjfLKGwpBYPAPGiCZAYiUmVXnAdED_w6WOYUSmlVBcxcXbkAciZJb3KXX0TQx2R1bYQ8oYfEqQj6huEyjxPvhvwqY8q8xztfYkhZlF-IOhhFtrnp7zWzo1Od6UYaU.7_Tnr1MpYJhFnDVCl3cZwVfIaf1JB5vQUAul2JyaTCQ&dib_tag=se&keywords=m1%2Bmacbook%2Bpro%2B16&qid=1708125067&sprefix=%2Caps%2C212&sr=8-3&th=1",
+    },
+
+    {
       item: "Visual Studio Code",
       category: "Tools and apps that I use",
       description: "Lightweight Code Editor",
