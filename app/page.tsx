@@ -11,6 +11,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { Link } from "@nextui-org/react";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import Head from "next/head";
+import Footer from "@/components/ui/footer";
 
 export const metadata: Metadata = {
   title: "Home | Chiedozie Ehileme",
@@ -95,6 +96,9 @@ export default function Home() {
           </ul>
         </div>
       </main>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

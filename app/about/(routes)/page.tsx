@@ -5,6 +5,7 @@ import Link from '@/components/ui/Link'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Educations from '../components/Education'
+import Footer from '@/components/ui/footer'
 
 
 export const metadata: Metadata = {
@@ -109,6 +110,9 @@ export default function About() {
             </div>
           </div>
         </main>
+        <div>
+          <Footer />
+        </div>
       </div>
     
   )
