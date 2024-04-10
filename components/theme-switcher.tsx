@@ -21,17 +21,18 @@ export default function ThemeSwitcher() {
 
   return (
     <>
-      <Listbox value={ theme } onChange={(value) => setTheme(value)}>
+      <Listbox value={theme} onChange={(value) => setTheme(value)}>
         {({ open }) => {
           const iconClassName = clsx(
-            "w-4 h-4 text-primary cursor-pointer transition-colors", resolvedTheme === "dark" && "dark:text-white"
+            "w-4 h-4 text-primary cursor-pointer transition-colors",
+            resolvedTheme === "dark" && "dark:text-white",
           );
 
           return (
             <div className="relative">
               <Listbox.Button
                 className={clsx(
-                  "sm:w-4 sm:h-4 relative w-8 h-8 cursor-pointer rounded-full flex items-center justify-center focus:outline-none"
+                  "relative flex h-8 w-8 cursor-pointer items-center justify-center rounded-full focus:outline-none sm:h-4 sm:w-4",
                 )}
               >
                 {resolvedTheme === "dark" ? (
@@ -49,17 +50,16 @@ export default function ThemeSwitcher() {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ type: "spring", bounce: 0.3, duration: 0.3 }}
-                    className="absolute right-0 p-2 mt-2 overflow-auto text-base origin-top-right shadow-lg max-h-60 w-42 rounded-xl bg-white dark:bg-black focus:outline-none sm:text-sm capitalize"
-                    style={theme === "pink" ? { background: "#dedddf"} :{}
-                  }
+                    className="w-42 absolute right-0 mt-2 max-h-60 origin-top-right overflow-auto rounded-xl bg-white p-2 text-base capitalize shadow-lg focus:outline-none sm:text-sm dark:bg-black"
+                    style={theme === "pink" ? { background: "#dedddf" } : {}}
                   >
                     {themes.map((theme) => (
                       <Listbox.Option
                         key={theme}
                         className={({ active }) =>
                           clsx(
-                            "relative cursor-pointer text-primary select-none py-2 pl-10 pr-4 rounded-md ",
-                            active ? "bg-gray-100 dark:bg-slate-800 " : ""
+                            "text-primary relative cursor-pointer select-none rounded-md py-2 pl-10 pr-4 ",
+                            active ? "bg-gray-100 dark:bg-slate-800 " : "",
                           )
                         }
                         value={theme}
@@ -76,7 +76,7 @@ export default function ThemeSwitcher() {
                             {selected ? (
                               <span className=" absolute inset-y-0 left-0 flex items-center pl-3 dark:text-neutral-50">
                                 <Check
-                                  className="w-4 h-4 "
+                                  className="h-4 w-4 "
                                   aria-hidden="true"
                                 />
                               </span>

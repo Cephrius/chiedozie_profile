@@ -79,6 +79,7 @@ export default function Home() {
               <Link
                 className="hover:text-secondary cursor-pointer"
                 href="https://drive.google.com/file/d/1cIuU900DZjXOxCQ8TYq8u_ENAN9hv36M/view?usp=drive_link"
+                target="_blank"
               >
                 <ArrowUpRightIcon className=" h-5 w-5" />
                 <span className="text-secondary font-bold">Resume</span>
