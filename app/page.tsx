@@ -8,10 +8,11 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
-import { Link } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import Head from "next/head";
 import Footer from "@/components/ui/footer";
+import { Camera, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Home | Chiedozie Ehileme",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
-      <main className="px-6 md:px-6 pt-16 pb-24 md:pt-20 md:pb-44 max-w-[700px] mx-auto ">
+      <main className="px-6 md:px-6 pt-16 pb-[20] md:pt-20 md:pb-44 max-w-[700px] mx-auto ">
         <div className="lg:text-3xl text-primary text-xl pb-8 font-bold animate-in-og">
           <h1>Chiedozie Ehileme</h1>
           <div className="lg:text-sm text-sm font-light text-secondary animate-in-og delay-100 ">
@@ -69,11 +70,12 @@ export default function Home() {
         </div>
         <div>
           <p className="lg:text-sm text-sm font-normal pt-10 lg:mr-40 animate-in-og delay-300 mr-8">
-            Hi there, I&apos;m Chiedozie Ehileme, a future software engineer studying
-            Computer Science at Houston Christian University. I love to work on
-            side projects of my own to improve my skills for later down the
-            road.
+            Hi there, I&apos;m Chiedozie Ehileme, a future software engineer
+            studying Computer Science at Houston Christian University. I love to
+            work on side projects of my own to improve my skills for later down
+            the road.
           </p>
+
           <ul className=" text-sm pt-6 lg:pt-10 space-y-2 lg:space-y-0 lg:space-x-5 md:space-x-3 md:space-y-0 animate-in-og delay-500 lg:items-center lg:flex md:flex">
             <li>
               <Link
@@ -94,10 +96,28 @@ export default function Home() {
                 <span className="text-secondary font-bold">Email Me</span>
               </Link>
             </li>
+            <li className="lg:hidden">
+              <p className="text-xs font-normal animate-in-og delay-700 ">Need a website for your company or business?</p>
+              <Link href="https://calendly.com/ehilemece/45min" target="_blank">
+                <Button startContent={<Phone />} className=" gap-2 items-center animate-in-og delay-700 bg-card hover:bg-card-foreground text-xs text-white px-3 py-2 rounded-md mt-4 lg:px-3 lg:py-2 lg:text-sm lg:mt-4 md:px-3 md:py-2 md:mt-4 hover:bg">
+                  Book a Call
+                </Button>
+              </Link>
+            </li>
           </ul>
         </div>
+        <div className="hidden lg:flex" >
+          <h2 className="lg:text-sm text-xs font-normal pt-10 lg:mr-40 animate-in-og delay-500 mr-8 ">
+            Need a website for your company or business?
+          </h2>
+          <Link href="https://calendly.com/ehilemece/45min" target="_blank">
+            <Button startContent={<Phone />} className=" gap-2 items-center animate-in-og delay-700 bg-card hover:bg-card-foreground text-xs text-white px-3 py-2 rounded-md mt-4 lg:px-3 lg:py-2 lg:text-sm lg:mt-4 md:px-3 md:py-2 md:mt-4 hover:bg">
+              Book a Call
+            </Button>
+          </Link>
+        </div>
       </main>
-      <div>
+      <div >
         <Footer />
       </div>
     </div>
