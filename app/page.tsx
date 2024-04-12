@@ -24,6 +24,7 @@ export default function Home() {
   return (
     <div>
       <main className="px-6 md:px-6 pt-16 pb-[20] md:pt-20 md:pb-44 max-w-[700px] mx-auto ">
+      <meta name="google-site-verification" content="-vX_pobhgoiZvhuy33vGJaiwxX94kSAuyOzFBHQmwpg" />
         <div className="lg:text-3xl text-primary text-xl pb-8 font-bold animate-in-og">
           <h1>Chiedozie Ehileme</h1>
           <div className="lg:text-sm text-sm font-light text-secondary animate-in-og delay-100 ">
