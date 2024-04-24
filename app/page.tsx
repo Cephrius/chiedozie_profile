@@ -81,7 +81,7 @@ export default function Home() {
             <li>
               <Link
                 className="hover:text-secondary cursor-pointer"
-                href="https://drive.google.com/file/d/1cIuU900DZjXOxCQ8TYq8u_ENAN9hv36M/view?usp=drive_link"
+                href="https://drive.google.com/file/d/14nwKW0N4IEOJTTlkar3Iia2P2MVGQuai/view?usp=sharing"
                 target="_blank"
               >
                 <ArrowUpRightIcon className=" h-5 w-5" />
