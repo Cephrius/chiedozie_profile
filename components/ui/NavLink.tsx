@@ -16,8 +16,8 @@ export default function NavLink({ href, children }: NavLinkProps) {
   return (
     <Link
       className={clsx(
-        "px-4 py-2 rounded-lg text-sm hover:text-gray-600 transition-colors",
-        active ? "bg-gray-300 dark:bg-gray-700" : ""
+        "px-4 py-2 rounded-lg text-sm  hover:text-gray-600 transition-colors",
+        active ? "bg-links font-semibold dark:bg-gray-700 "  : ""
       )}
       href={href}
     >

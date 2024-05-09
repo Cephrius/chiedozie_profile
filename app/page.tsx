@@ -48,22 +48,23 @@ export default function Home() {
                 href={
                   "https://www.linkedin.com/in/chiedozie-ehileme-529b6a25b/"
                 }
+                target="_blank"
               >
                 <BsLinkedin />
               </Link>
             </li>
             <li className="text-lg lg:text-lg hover:scale-125 duration-300">
-              <Link href={"https://www.instagram.com/chi3dozie/"}>
+              <Link href={"https://www.instagram.com/chi3dozie/"} target="_blank">
                 <AiFillInstagram />
               </Link>
             </li>
             <li className="text-lg lg:text-lg hover:scale-125 duration-300">
-              <Link href={"https://twitter.com/CEhileme"}>
+              <Link href={"https://twitter.com/CEhileme"} target="_blank">
                 <BsTwitter />
               </Link>
             </li>
             <li className="text-lg lg:text-lg hover:scale-125 duration-300">
-              <Link href={"https://github.com/Cephrius"}>
+              <Link href={"https://github.com/Cephrius"} target="_blank">
                 <BsGithub />
               </Link>
             </li>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div>
-      <main className="mx-auto max-w-[700px] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20">
+      <main className="mx-auto max-w-[700px] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20">    
         <div className="text-primary animate-in-og pb-8 text-xl font-bold lg:text-3xl">
           <h1>About Me</h1>
           <div className="text-secondary animate-in-og from-neutral-700 text-sm font-light delay-100 lg:text-sm ">
@@ -85,7 +85,7 @@ export default function About() {
                   >
                     <Link
                       href={link.href}
-                      className="border-primary inline-grid w-full rounded-lg border p-4 no-underline transition-opacity"
+                      className=" bg-cards border-none inline-grid w-full rounded-lg border p-4 no-underline transition-opacity"
                     >
                       <div className="flex items-center gap-3">
                         <span className="text-xl">{link.icon}</span>

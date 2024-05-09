@@ -25,7 +25,7 @@ export default function Navigation() {
 
   return (
     <header className={clsx("relative md:sticky top-0 z-20 ")}>
-      <nav className="px-4 md:px-6 py-3 lg max-w-[700px] mx-auto flex justify-between items-center gap-3 bg-background ">
+      <nav className="px-4 md:px-6 py-3 md:py-10 lg:py-10 max-w-[700px] mx-auto flex justify-between items-center gap-3 bg-background ">
         <Link href="/" className="shrink-0 text-primary flex  dark:text-white">
           <Image 
             src={resolvedTheme === 'dark' ? '/whitelogo.png': "/logo.jpg"} 

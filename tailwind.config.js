@@ -56,7 +56,15 @@ module.exports = {
         footer: {
           DEFAULT: "hsl(var(--footer))",
           foreground: "hsl(var(--footer-foreground))",
-        }
+        },
+        cards: {
+          DEFAULT: "hsl(var(--cards))",
+          foreground: "hsl(var(--cards))",
+        },
+        links: {
+          DEFAULT: "hsl(var(--links))",
+          foreground: "hsl(var(--links-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

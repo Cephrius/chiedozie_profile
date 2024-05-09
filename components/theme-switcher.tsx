@@ -24,7 +24,7 @@ export default function ThemeSwitcher() {
       <Listbox value={theme} onChange={(value) => setTheme(value)}>
         {({ open }) => {
           const iconClassName = clsx(
-            "w-4 h-4 text-primary cursor-pointer transition-colors",
+            "w-4 h-4 text-primary cursor-pointer transition-colors ",
             resolvedTheme === "dark" && "dark:text-white",
           );
 

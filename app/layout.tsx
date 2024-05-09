@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/providers/theme-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/ui/Navbar";
 import { NextUIProvider } from "@nextui-org/react";
 import clsx from "clsx";
