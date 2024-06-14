@@ -271,7 +271,7 @@ export default function Gear() {
           </p>
         </div>
         <Image
-          src={"/setup.jpg"}
+          src={"/setup2.jpg"}
           alt="setup"
           width={1280}
           height={720}

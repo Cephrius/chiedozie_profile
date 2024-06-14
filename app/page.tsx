@@ -99,7 +99,7 @@ export default function Home() {
               </Link>
             </li>
             <li className="lg:hidden">
-              <p className="text-xs font-normal animate-in-og delay-700 ">Need a website for your company or business?</p>
+              <p className="text-xs font-normal animate-in-og delay-700 ">Need a website for your company or personal business?</p>
               <Link href="https://calendly.com/ehilemece/45min" target="_blank">
                 <Button startContent={<Phone />} className=" gap-2 items-center animate-in-og delay-700 bg-card hover:bg-card-foreground text-xs text-white px-3 py-2 rounded-md mt-4 lg:px-3 lg:py-2 lg:text-sm lg:mt-4 md:px-3 md:py-2 md:mt-4 hover:bg">
                   Book a Call
