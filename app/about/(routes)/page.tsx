@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div>
-      <main className="mx-auto max-w-[700px] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20">    
+      <main className="mx-auto max-w-[700px] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20">
         <div className="text-primary animate-in-og pb-8 text-xl font-bold lg:text-3xl">
           <h1>About Me</h1>
           <div className="text-secondary animate-in-og from-neutral-700 text-sm font-light delay-100 lg:text-sm ">
@@ -75,7 +75,6 @@ export default function About() {
                 <Link href={"mailto:chiedozie.ehileme@gmail.com"}>
                   <span className=" underline-offset-2">email me</span>
                 </Link>
-                .
               </p>
               <ul className="animated-list animate-in-og grid flex-grow grid-cols-1 gap-2 delay-300 md:grid-cols-2">
                 {ConnectLink.map((link) => (
@@ -146,4 +145,3 @@ const education = [
     link: "https://www.staffordmsd.org",
   },
 ];
-

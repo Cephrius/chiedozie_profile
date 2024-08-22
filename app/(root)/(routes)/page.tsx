@@ -8,11 +8,12 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
-import { Button, Link } from "@nextui-org/react";
+import { Button, Card, Link } from "@nextui-org/react";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import Head from "next/head";
 import Footer from "@/components/ui/footer";
 import { Camera, Phone } from "lucide-react";
+import TechStack from "@/components/TechStack";
 
 export const metadata: Metadata = {
   title: "Home | Chiedozie Ehileme",
@@ -24,7 +25,10 @@ export default function Home() {
   return (
     <div>
       <main className="px-6 md:px-6 pt-16 pb-[20] md:pt-20 md:pb-44 max-w-[700px] mx-auto ">
-      <meta name="google-site-verification" content="-vX_pobhgoiZvhuy33vGJaiwxX94kSAuyOzFBHQmwpg" />
+        <meta
+          name="google-site-verification"
+          content="-vX_pobhgoiZvhuy33vGJaiwxX94kSAuyOzFBHQmwpg"
+        />
         <div className="lg:text-3xl text-primary text-xl pb-8 font-bold animate-in-og">
           <h1>Chiedozie Ehileme</h1>
           <div className="lg:text-sm text-sm font-light text-secondary animate-in-og delay-100 ">
@@ -54,7 +58,10 @@ export default function Home() {
               </Link>
             </li>
             <li className="text-lg lg:text-lg hover:scale-125 duration-300">
-              <Link href={"https://www.instagram.com/chi3dozie/"} target="_blank">
+              <Link
+                href={"https://www.instagram.com/chi3dozie/"}
+                target="_blank"
+              >
                 <AiFillInstagram />
               </Link>
             </li>
@@ -99,27 +106,38 @@ export default function Home() {
               </Link>
             </li>
             <li className="lg:hidden">
-              <p className="text-xs font-normal animate-in-og delay-700 ">Need a website for your company or personal business?</p>
+              <p className="text-xs font-normal animate-in-og delay-700 ">
+                Need a website for your company or business?
+              </p>
               <Link href="https://calendly.com/ehilemece/45min" target="_blank">
-                <Button startContent={<Phone />} className=" gap-2 items-center animate-in-og delay-700 bg-card hover:bg-card-foreground text-xs text-white px-3 py-2 rounded-md mt-4 lg:px-3 lg:py-2 lg:text-sm lg:mt-4 md:px-3 md:py-2 md:mt-4 hover:bg">
+                <Button
+                  startContent={<Phone />}
+                  className=" gap-2 items-center animate-in-og delay-700 bg-card text-xs text-white px-3 py-2 rounded-md mt-4 lg:px-3 lg:py-2 lg:text-sm lg:mt-4 md:px-3 md:py-2 md:mt-4 hover:bg"
+                >
                   Book a Call
                 </Button>
               </Link>
             </li>
           </ul>
+          <section className="flex mt-5 animate-in-og delay-500">
+            <TechStack />
+          </section>
         </div>
-        <div className="hidden lg:flex" >
+        <div className="hidden lg:flex">
           <h2 className="lg:text-sm text-xs font-normal pt-10 lg:mr-40 animate-in-og delay-500 mr-8 ">
             Need a website for your company or business?
           </h2>
           <Link href="https://calendly.com/ehilemece/45min" target="_blank">
-            <Button startContent={<Phone />} className=" gap-2 items-center animate-in-og delay-700 bg-card hover:bg-card-foreground text-xs text-white px-3 py-2 rounded-md mt-4 lg:px-3 lg:py-2 lg:text-sm lg:mt-4 md:px-3 md:py-2 md:mt-4 hover:bg">
+            <Button
+              startContent={<Phone />}
+              className=" gap-2 items-center animate-in-og delay-700 bg-card text-xs text-white px-3 py-2 rounded-md mt-4 lg:px-3 lg:py-2 lg:text-sm lg:mt-4 md:px-3 md:py-2 md:mt-4"
+            >
               Book a Call
             </Button>
           </Link>
         </div>
       </main>
-      <div >
+      <div>
         <Footer />
       </div>
     </div>

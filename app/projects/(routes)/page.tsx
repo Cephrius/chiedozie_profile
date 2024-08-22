@@ -51,11 +51,11 @@ const Project = ({ title, description, image, link }: ProjectProps) => (
 
 const listProject = [
   {
-    title: "Husky Treads",
+    title: "Cephrius Health",
     description:
-      "Husky Threads is a social platform where users can engage in community discussions by creating threads, replying to others, and sharing their thoughts. With a focus on real-time interaction, Husky Threads provides a vibrant environment for dynamic discussions.",
-    image: "/huskythreads.png",
-    link: "https://github.com/Cephrius/Husky_Threads",
+      "Cephrius Health is a healthcare platform that streamlines patient registration, appointment scheduling, and medical records, and uses React Form to implement complex forms and twilio for SMS notifications. ",
+    image: "/cephriushealth.png",
+    link: "https://github.com/Cephrius/Cephrius_Health",
   },
   {
     title: "Cephrius Markdown",
@@ -72,12 +72,12 @@ const listProject = [
     link: "https://github.com/Cephrius/Cephrius_RestAPI",
   },
   {
-    title: "Weather App",
+    title: "Pantry Tracker",
     description:
-      "Welcome to WeatherApp, a simple web application that provides weather forecasts for different locations. With WeatherApp, you can quickly retrieve weather information, including temperature, weather conditions, and more, for the current day and the next few days.",
+      "This a simple NextJS pantry app that uses firebase to store items as well as their quantities. Made with shadcn/ui, typescript, firebase and NextJS",
     image:
-      "https://github.com/Cephrius/minimalWeatherApp/raw/main/screenshot.png",
-    link: "https://github.com/Cephrius/minimalWeatherApp",
+      "/cephrius_pantry.png",
+    link: "https://pantry.chiedozie.me",
   },
 ];
 
