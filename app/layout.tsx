@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/logo.jpg" />
+      <meta name="google-site-verification" content="2BnZiH8Ld8b_9IeqjCXQZzCUZg08Rv2uAWaTYVL35yI" />
       <body
         className={clsx(
           inter.className,
