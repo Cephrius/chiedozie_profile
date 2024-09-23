@@ -5,7 +5,7 @@ import Footer from "@/components/ui/footer";
 interface ProjectProps {
   title: string;
   description: string;
-  image: string;x
+  image: string;
   link: string;
 }
 
