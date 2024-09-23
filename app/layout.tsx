@@ -12,10 +12,10 @@ import clsx from "clsx";
 const inter = Inter({ subsets: ["latin"] });
 
 // Add meta data
-export const metadata: Metadata = {
-  title: "Chiedozie ",
-  description: "Chiedozie Ehileme is a Computer Science Student and Founder of Cephrius Technologies ",
-};
+// export const metadata: Metadata = {
+//   title: "Chiedozie ",
+//   description: "Chiedozie Ehileme is a Computer Science Student and Founder of Cephrius Technologies ",
+// };
 
 
 export default function RootLayout({
