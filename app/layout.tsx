@@ -2,12 +2,15 @@
 
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Geist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/ui/Navbar";
 import { NextUIProvider } from "@nextui-org/react";
 import clsx from "clsx";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", geist.variable)}>
       <link rel="icon" href="/logo.jpg" />
       <meta name="google-site-verification" content="2BnZiH8Ld8b_9IeqjCXQZzCUZg08Rv2uAWaTYVL35yI" />
       <body
