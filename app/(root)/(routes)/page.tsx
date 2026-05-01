@@ -23,13 +23,6 @@ const selectedProjects = [
     meta: "Next.js, TypeScript, Supabase",
   },
   {
-    title: "Cephrius Health",
-    description:
-      "A healthcare platform for registration, scheduling, medical records, and notification flows.",
-    href: "https://github.com/Cephrius/Cephrius_Health",
-    meta: "Next.js, TypeScript, Twilio",
-  },
-  {
     title: "Cephrius Markdown",
     description:
       "A lightweight markdown editor built for focused writing and clean note taking.",
@@ -56,17 +49,17 @@ const quickLinks = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/chiedozie-ehileme-529b6a25b/",
+    href: "https://www.linkedin.com/in/chiedozie-ehileme",
   },
   {
     label: "Email",
-    href: "mailto:chiedozie.ehileme@gmail.com",
+    href: "mailto:chiedozie.aws@gmail.com",
   },
 ];
 
 const currentFocus = [
   "Building frontend experiences that feel clear, fast, and polished.",
-  "Improving portfolio projects with stronger structure and cleaner UI systems.",
+  "Improving portfolio projects with stronger structure and cleaner UI systems while integrating the latest AI technologies.",
   "Growing into a product-minded software engineer through consistent shipping.",
 ];
 
@@ -79,9 +72,10 @@ export default function Home() {
             Chiedozie Ehileme
           </h1>
           <p className="mt-6 max-w-xl text-base leading-8 text-muted-foreground sm:text-lg">
-            Software engineer and Computer Science student building thoughtful
-            web products with a strong focus on frontend clarity, simple user
-            experience, and maintainable code.
+            Founder of <span className="underline dark:text-white text-black">Cephrius Technologies</span>, Software engineer and Computer Science student building
+            web products with the latest cloud and AI Technologies with
+            a strong focus on frontend clarity, simple user
+            experiences, and powerful backend systems.
           </p>
 
           <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
@@ -173,18 +167,10 @@ export default function Home() {
 
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             <a
-              href="mailto:chiedozie.ehileme@gmail.com"
+              href="mailto:chiedozie.aws@gmail.com"
               className="text-sm underline underline-offset-4 transition-colors hover:text-muted-foreground"
             >
-              chiedozie.ehileme@gmail.com
-            </a>
-            <a
-              href="https://calendly.com/ehilemece/45min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm underline underline-offset-4 transition-colors hover:text-muted-foreground"
-            >
-              Book a call
+              chiedozie.aws@gmail.com
             </a>
             <a
               href="https://github.com/Cephrius"

@@ -28,13 +28,6 @@ const projects: ProjectProps[] = [
     stack: "Next.js, TypeScript, Supabase",
   },
   {
-    title: "Cephrius Health",
-    description:
-      "A healthcare platform that streamlines patient registration, scheduling, medical records, and notifications.",
-    link: "https://github.com/Cephrius/Cephrius_Health",
-    stack: "Next.js, TypeScript, Twilio",
-  },
-  {
     title: "Cephrius Markdown",
     description:
       "A markdown editor focused on simple writing and a clean content workflow.",
