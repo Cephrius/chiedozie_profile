@@ -1,11 +1,12 @@
-import React from "react";
+import { Separator } from "@/components/ui/separator";
 
 export default function Footer() {
   return (
-    <div>
-      <p className="text-center text-sm bottom-0 text-footer animate-in-og delay-500 mt-7 lg:mt-0 md:mt-0">
-        Powered by Cephrius Technologies © 2024
+    <footer className="mx-auto max-w-2xl px-6 pb-10">
+      <Separator className="mb-6" />
+      <p className="text-sm text-muted-foreground">
+        Chiedozie Ehileme &copy; {new Date().getFullYear()}.
       </p>
-    </div>
+    </footer>
   );
 }

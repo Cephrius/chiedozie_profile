@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      domains: ['m.media-amazon.com', 'static.bhphoto.com', 'icons8.com', 'github.com', 'support.apple.com','raw.githubusercontent.com'],
-    },
-  };
-  
-  module.exports = nextConfig;
-  
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "m.media-amazon.com" },
+      { protocol: "https", hostname: "static.bhphoto.com" },
+      { protocol: "https", hostname: "code.visualstudio.com" },
+      { protocol: "https", hostname: "github.githubassets.com" },
+      { protocol: "https", hostname: "upload.wikimedia.org" },
+    ],
+  },
+};
+
+module.exports = nextConfig;
