@@ -1,60 +1,54 @@
 import Image from "next/image";
 
-interface TechStackLabels {
+interface TechStackLabel {
   label: string;
   href: string;
   icon: React.ReactNode;
   tooltip: string;
 }
 
-const TechStackLabels: TechStackLabels[] = [
+const TechStackLabels: TechStackLabel[] = [
   {
     label: "NextJS",
     href: "https://nextjs.org/",
-    icon: <Image src="/nextjs.png" width="40" height="40" alt="image" />,
-    tooltip: "The best react framework of all time."
+    icon: <Image src="/nextjs.png" width={32} height={32} alt="Next.js logo" />,
+    tooltip: "The best React framework of all time.",
   },
   {
     label: "Shadcn/ui",
-    href: "https://nextjs.org/",
-    icon: <Image src="/shadcnui.png" width="40" height="40" alt="image" />,
-    tooltip: "The best react component library of all times."
-  },
-  {
-    label: "NextUI",
-    href: "https://nextjs.org/",
-    icon: <Image src="/nextui.png" width="40" height="40" alt="image" />,
-    tooltip: "My second favorite component library"
+    href: "https://ui.shadcn.com/",
+    icon: <Image src="/shadcnui.png" width={32} height={32} alt="shadcn/ui logo" />,
+    tooltip: "The best React component library of all time.",
   },
   {
     label: "TypeScript",
-    href: "https://nextjs.org/",
-    icon: <Image src="/typescript.png" width="40" height="40" alt="image" />,
-    tooltip: "My go-to language when it works."
+    href: "https://www.typescriptlang.org/",
+    icon: <Image src="/typescript.png" width={32} height={32} alt="TypeScript logo" />,
+    tooltip: "My go-to language when it works.",
   },
   {
     label: "Appwrite",
-    href: "https://nextjs.org/",
-    icon: <Image src="/appwrite.png" width="40" height="40" alt="image" />,
-    tooltip: "A fun multi-purpose backend platform"
+    href: "https://appwrite.io/",
+    icon: <Image src="/appwrite.png" width={32} height={32} alt="Appwrite logo" />,
+    tooltip: "A fun multi-purpose backend platform.",
   },
   {
     label: "ExpressJS",
-    href: "https://nextjs.org/",
-    icon: <Image src="/expressjs.png" width="40" height="40" alt="image" />,
-    tooltip: "The magic behind APIs"
+    href: "https://expressjs.com/",
+    icon: <Image src="/expressjs.png" width={32} height={32} alt="Express.js logo" />,
+    tooltip: "The magic behind APIs.",
   },
   {
     label: "NodeJS",
-    href: "https://nextjs.org/",
-    icon: <Image src="/nodejs.png" width="40" height="40" alt="image" />,
-    tooltip: "The backbone of all javascript"
+    href: "https://nodejs.org/",
+    icon: <Image src="/nodejs.png" width={32} height={32} alt="Node.js logo" />,
+    tooltip: "The backbone of all JavaScript.",
   },
   {
     label: "Figma",
-    href: "https://nextjs.org/",
-    icon: <Image src="/figma.png" width="40" height="40" alt="image" />,
-    tooltip: "My favourite design tool"
+    href: "https://www.figma.com/",
+    icon: <Image src="/figma.png" width={32} height={32} alt="Figma logo" />,
+    tooltip: "My favourite design tool.",
   },
 ];
 

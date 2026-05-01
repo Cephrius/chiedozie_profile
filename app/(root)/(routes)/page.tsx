@@ -1,141 +1,211 @@
-import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
-import {
-  BsEnvelopeFill,
-  BsGithub,
-  BsInstagram,
-  BsLinkedin,
-  BsTwitter,
-} from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
-import { Button, Card, Link } from "@nextui-org/react";
-import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
-import Head from "next/head";
+import { ArrowUpRight } from "lucide-react";
 import Footer from "@/components/ui/footer";
-import { Camera, Phone } from "lucide-react";
-import TechStack from "@/components/TechStack";
 
 export const metadata: Metadata = {
-  title: "Home | Chiedozie Ehileme",
+  title: "Home",
   description:
-    "Chiedozie Ehileme is a Computer Science Major at Houston Christian University.",
+    "Chiedozie Ehileme is a software engineer building simple, reliable web products with a focus on clean interfaces and maintainable frontend systems.",
+  openGraph: {
+    title: "Chiedozie Ehileme | Software Engineer",
+    description:
+      "Software engineer focused on projects, frontend systems, and clean web experiences.",
+  },
 };
+
+const selectedProjects = [
+  {
+    title: "JobSyte",
+    description:
+      "A construction operations platform for managing projects, job schedules, invoices, and field team workflows.",
+    href: "https://jobsyte.co",
+    meta: "Next.js, TypeScript, Supabase",
+  },
+  {
+    title: "Cephrius Health",
+    description:
+      "A healthcare platform for registration, scheduling, medical records, and notification flows.",
+    href: "https://github.com/Cephrius/Cephrius_Health",
+    meta: "Next.js, TypeScript, Twilio",
+  },
+  {
+    title: "Cephrius Markdown",
+    description:
+      "A lightweight markdown editor built for focused writing and clean note taking.",
+    href: "https://github.com/Cephrius/Cephrius-Markdown",
+    meta: "React, Markdown, Editor UX",
+  },
+  {
+    title: "Pantry Tracker",
+    description:
+      "A practical pantry management app with a simple interface and fast inventory workflows.",
+    href: "https://pantry.chiedozie.me",
+    meta: "Next.js, Firebase, shadcn/ui",
+  },
+];
+
+const quickLinks = [
+  {
+    label: "Resume",
+    href: "https://drive.google.com/file/d/1ZCAmaGjm1R6O-m47GxtmhQ_ZHSF9Ayav/view?usp=sharing",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/Cephrius",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/chiedozie-ehileme-529b6a25b/",
+  },
+  {
+    label: "Email",
+    href: "mailto:chiedozie.ehileme@gmail.com",
+  },
+];
+
+const currentFocus = [
+  "Building frontend experiences that feel clear, fast, and polished.",
+  "Improving portfolio projects with stronger structure and cleaner UI systems.",
+  "Growing into a product-minded software engineer through consistent shipping.",
+];
 
 export default function Home() {
   return (
     <div>
-      <main className="px-6 md:px-6 pt-16 pb-[20] md:pt-20 md:pb-44 max-w-[700px] mx-auto ">
-        <div className="lg:text-3xl text-primary text-xl pb-8 font-bold animate-in-og">
-          <h1>Chiedozie Ehileme</h1>
-          <div className="lg:text-sm text-sm font-light text-secondary animate-in-og delay-100 ">
-            <p>Computer Science Major</p>
-          </div>
-        </div>
-        <div className="flex items-center space-x-11  ">
-          {" "}
-          {/* Use flexbox for horizontal alignment */}
-          <Image
-            src="/headshot.jpg"
-            width={100}
-            height={100}
-            alt="logo"
-            className="justify-center rounded-full shadow-lg animate-in-og delay-150 "
-          />
-          {/* SOCIAL LINKS */}
-          <ul className="flex space-x-5 items-center animate-in-og delay-150">
-            <li className="text-sm lg:text-sm hover:scale-125 duration-300">
-              <Link
-                href={
-                  "https://www.linkedin.com/in/chiedozie-ehileme-529b6a25b/"
-                }
-                target="_blank"
-              >
-                <BsLinkedin />
-              </Link>
-            </li>
-            <li className="text-lg lg:text-lg hover:scale-125 duration-300">
-              <Link
-                href={"https://www.instagram.com/chi3dozie/"}
-                target="_blank"
-              >
-                <AiFillInstagram />
-              </Link>
-            </li>
-            <li className="text-lg lg:text-lg hover:scale-125 duration-300">
-              <Link href={"https://twitter.com/CEhileme"} target="_blank">
-                <BsTwitter />
-              </Link>
-            </li>
-            <li className="text-lg lg:text-lg hover:scale-125 duration-300">
-              <Link href={"https://github.com/Cephrius"} target="_blank">
-                <BsGithub />
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p className="lg:text-sm text-sm font-normal pt-10 lg:mr-40 animate-in-og delay-300 mr-8">
-            Hi there, I&apos;m Chiedozie Ehileme, a future software engineer
-            studying Computer Science at Houston Christian University. I love to
-            work on side projects of my own to improve my skills for later down
-            the road.
+      <main className="mx-auto max-w-2xl px-6 pb-24 pt-12 md:pt-16">
+        <section className="animate-in-og">
+          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            Chiedozie Ehileme
+          </h1>
+          <p className="mt-6 max-w-xl text-base leading-8 text-muted-foreground sm:text-lg">
+            Software engineer and Computer Science student building thoughtful
+            web products with a strong focus on frontend clarity, simple user
+            experience, and maintainable code.
           </p>
 
-          <ul className=" text-sm pt-6 lg:pt-10 space-y-2 lg:space-y-0 lg:space-x-5 md:space-x-3 md:space-y-0 animate-in-og delay-500 lg:items-center lg:flex md:flex">
-            <li>
-              <Link
-                className="hover:text-secondary cursor-pointer"
-                href="https://drive.google.com/file/d/14nwKW0N4IEOJTTlkar3Iia2P2MVGQuai/view?usp=share_link"
-                target="_blank"
-              >
-                <ArrowUpRightIcon className=" h-5 w-5" />
-                <span className="text-secondary font-bold">Resume</span>
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-secondary cursor-pointer"
-                href="mailto:chiedozie.ehileme@gmail.com"
-              >
-                <ArrowUpRightIcon className=" h-5 w-5" />
-                <span className="text-secondary font-bold">Email Me</span>
-              </Link>
-            </li>
-            <li className="lg:hidden">
-              <p className="text-xs font-normal animate-in-og delay-700 ">
-                Need a website for your company or business?
-              </p>
-              <Link href="https://calendly.com/ehilemece/45min" target="_blank">
-                <Button
-                  startContent={<Phone />}
-                  className=" gap-2 items-center animate-in-og delay-700 bg-card text-xs text-white px-3 py-2 rounded-md mt-4 lg:px-3 lg:py-2 lg:text-sm lg:mt-4 md:px-3 md:py-2 md:mt-4 hover:bg"
+          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
+            {quickLinks.map((item) => (
+              <li key={item.label}>
+                <a
+                  href={item.href}
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+                  rel={
+                    item.href.startsWith("http")
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
+                  className="inline-flex items-center gap-2 underline underline-offset-4 transition-colors hover:text-foreground"
                 >
-                  Book a Call
-                </Button>
-              </Link>
-            </li>
+                  {item.label}
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </a>
+              </li>
+            ))}
           </ul>
-          <section className="flex mt-5 animate-in-og delay-500">
-            <TechStack />
-          </section>
-        </div>
-        <div className="hidden lg:flex">
-          <h2 className="lg:text-sm text-xs font-normal pt-10 lg:mr-40 animate-in-og delay-500 mr-8 ">
-            Need a website for your company or business?
+        </section>
+
+        <section className="animate-in-og mt-16 border-t pt-10">
+          <h2 className="text-xl font-semibold tracking-tight">
+            Selected Projects
           </h2>
-          <Link href="https://calendly.com/ehilemece/45min" target="_blank">
-            <Button
-              startContent={<Phone />}
-              className=" gap-2 items-center animate-in-og delay-700 bg-card text-xs text-white px-3 py-2 rounded-md mt-4 lg:px-3 lg:py-2 lg:text-sm lg:mt-4 md:px-3 md:py-2 md:mt-4"
+          <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
+            A few projects that best represent how I think about interface
+            design, product usability, and practical engineering.
+          </p>
+
+          <ul className="mt-8 space-y-8">
+            {selectedProjects.map((project) => (
+              <li key={project.title} className="space-y-2">
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-base font-medium transition-colors hover:text-muted-foreground"
+                >
+                  {project.title}
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+                <p className="text-sm leading-7 text-muted-foreground">
+                  {project.description}
+                </p>
+                <p className="text-sm text-muted-foreground/80">
+                  {project.meta}
+                </p>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-8">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 text-sm underline underline-offset-4 transition-colors hover:text-muted-foreground"
             >
-              Book a Call
-            </Button>
-          </Link>
-        </div>
+              View all projects
+              <ArrowUpRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
+        </section>
+
+        <section className="animate-in-og mt-16 border-t pt-10">
+          <h2 className="text-xl font-semibold tracking-tight">Currently</h2>
+          <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
+            I&apos;m currently studying Computer Science at Southern New
+            Hampshire University while continuing to refine my skills through
+            personal products and portfolio work.
+          </p>
+
+          <ul className="mt-6 space-y-4">
+            {currentFocus.map((item) => (
+              <li key={item} className="text-sm leading-7 text-muted-foreground">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="animate-in-og mt-16 border-t pt-10">
+          <h2 className="text-xl font-semibold tracking-tight">Connect</h2>
+          <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
+            If you&apos;d like to collaborate, chat about a project, or just say
+            hello, feel free to reach out.
+          </p>
+
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            <a
+              href="mailto:chiedozie.ehileme@gmail.com"
+              className="text-sm underline underline-offset-4 transition-colors hover:text-muted-foreground"
+            >
+              chiedozie.ehileme@gmail.com
+            </a>
+            <a
+              href="https://calendly.com/ehilemece/45min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm underline underline-offset-4 transition-colors hover:text-muted-foreground"
+            >
+              Book a call
+            </a>
+            <a
+              href="https://github.com/Cephrius"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm underline underline-offset-4 transition-colors hover:text-muted-foreground"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/chiedozie-ehileme-529b6a25b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm underline underline-offset-4 transition-colors hover:text-muted-foreground"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </section>
       </main>
-      <div>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

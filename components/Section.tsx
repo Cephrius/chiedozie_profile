@@ -1,36 +1,30 @@
-"use client"
+"use client";
 
-
-import { ReactNode } from "react"
-import clsx from "clsx"
-import { useTheme } from "next-themes"
-
+import { ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 type SectionProps = {
-    heading: String,
-    headingAlignment: "left" | "right";
-    children: ReactNode;
-}
+  heading: string;
+  headingAlignment: "left" | "right";
+  children: ReactNode;
+};
 
 export default function Section({
-    heading,
-    headingAlignment,
-    children
+  heading,
+  headingAlignment,
+  children,
 }: SectionProps) {
-
-    const { theme } = useTheme();
-
-    return (
-        <section className="flex flex-col md:flex-row gap-2 md:gap-9 col-reverse">
-            <h2 className={clsx("md:w-32 text-secondary shrink-0 animate-in-og",
-            headingAlignment=== "right" &&" md:text-right",
-            theme === "terminal" ? "font-mono tracking-tight" : "")}
-            >
-            
-                {heading}
-            
-            </h2>
-            {children}
-        </section>
-    )
+  return (
+    <section className="flex flex-col gap-2 md:flex-row md:gap-9">
+      <h2
+        className={cn(
+          "shrink-0 text-muted-foreground md:w-32",
+          headingAlignment === "right" && "md:text-right"
+        )}
+      >
+        {heading}
+      </h2>
+      {children}
+    </section>
+  );
 }

@@ -1,3 +1,4 @@
+import * as React from "react"
 import { Button as ButtonPrimitive } from "@base-ui/react/button"
 import { cva, type VariantProps } from "class-variance-authority"
 
@@ -40,18 +41,47 @@ const buttonVariants = cva(
   }
 )
 
+type ButtonProps = ButtonPrimitive.Props &
+  VariantProps<typeof buttonVariants> & {
+    asChild?: boolean
+  }
+
 function Button({
   className,
   variant = "default",
   size = "default",
+  asChild = false,
+  children,
+  nativeButton,
   ...props
-}: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
+}: ButtonProps) {
+  const sharedProps = {
+    "data-slot": "button",
+    className: cn(buttonVariants({ variant, size, className })),
+    ...props,
+  }
+
+  if (asChild) {
+    if (!React.isValidElement(children)) {
+      throw new Error("Button with asChild expects a single React element child.")
+    }
+
+    return (
+      <ButtonPrimitive
+        {...sharedProps}
+        nativeButton={nativeButton ?? false}
+        render={children}
+      />
+    )
+  }
+
   return (
     <ButtonPrimitive
-      data-slot="button"
-      className={cn(buttonVariants({ variant, size, className }))}
-      {...props}
-    />
+      {...sharedProps}
+      nativeButton={nativeButton}
+    >
+      {children}
+    </ButtonPrimitive>
   )
 }
 

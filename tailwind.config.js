@@ -1,15 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 
-
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-    
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -55,41 +52,13 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        footer: {
-          DEFAULT: "hsl(var(--footer))",
-          foreground: "hsl(var(--footer-foreground))",
-        },
-        cards: {
-          DEFAULT: "hsl(var(--cards))",
-          foreground: "hsl(var(--cards))",
-        },
-        links: {
-          DEFAULT: "hsl(var(--links))",
-          foreground: "hsl(var(--links-foreground))",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      keyframes: {
-        "in": {
-          "0%": { transform: "translateY(18px)", opacity: 0 },
-          "100%": { transform: "translateY(0)", opacity: 1 },
-        },
-        "in-reverse": {
-          "0%": { transform: "translateY(-18px)", opacity: 0 },
-          "100%": { transform: "translateY(0px)", opacity: 1 },
-        },
-      },
-      animation: {
-        "in-og": "in 0.65s both",
-        "in-reverse": "in-reverse 0.9s both",
-      },
     },
   },
-  plugins: [require("tailwindcss-animate")]
-  
-  
-}
+  plugins: [require("tailwindcss-animate")],
+};
